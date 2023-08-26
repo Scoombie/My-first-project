@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRESH COFFEE</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: #25161b;
+      }
+      .hot {
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .drink {
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px;
+      }
+      img {
+        display: block;
+        max-width: 97%;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+      p {
+        color: black;
+        font-size: smaller;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: oblique;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      .rain {
+        display: block;
+        text-decoration: none;
+        margin-top: 10px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        font-style: oblique;
+        font-size: smaller;
+        font-weight: bolder;
+        text-align: left;
+        padding: 0% auto;
+      }
+      .rain:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto 40px auto;
+        color: bisque;
+        padding: 15px 20px;
+        font-size: 20px;
+        background: black;
+        border: 1px solid;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+        border-width: 1px;
+        transition: all 200ms ease-in-out;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: bisque;
+        color: black;
+        border: 1px solid black;
+      }
+      .cold {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 30px 60px;
+        border-radius: 8px;
+        border: 1px solid black;
+        background-color: bisque;
+      }
+      hr {
+        height: 2px;
+        background-color: black;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="hot">☕ENJOY</h1>
+        <h2 class="drink">FRESH COFFEE IN THE MORNING</h2>
+      </div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/648/original/COFFEE.png?1689872648"
+        alt=""
+      />
+      <hr />
+      <p>
+        Coffee is a beverage prepared from roasted coffee beans. Darkly colored,
+        bitter, and slightly acidic, coffee has a stimulating effect on humans,
+        primarily due to its caffeine content. It has the highest sales in the
+        world market for hot drinks is usually served hot, although chilled or
+        iced coffee is common. Coffee can be prepared and presented in a variety
+        of ways (e.g., espresso, French press and caffè latte).
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Coffee"
+        target="_blank"
+        class="rain"
+      >
+        Read more on wikipedia</a
+      >
+      <br />
+      <button>👉Try it!</button>
+      <h3 class="cold">👩‍💻Coded by Bridget</h3>
+    </div>
+    <script>
+      function pro() {
+        let name = prompt(" What is your name?");
+        let age = prompt("How old are you?");
+        if (age >= 12) {
+          alert("Have a cup of coffee" + " " + name + ".");
+        } else {
+          alert("Avoid having a cup of coffee" + " " + name + ".");
+        }
+      }
+
+      let proButton = document.querySelector("button");
+      proButton.addEventListener("click", pro);
+    </script>
+  </body>
+</html>
